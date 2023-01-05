@@ -1,0 +1,317 @@
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <meta charset="UTF-8">
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/StudioKonKon/bootstrap-konkon@1.1.2-beta/dist/css/studio-konkon.min.css'>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/material-design-iconic-font@2.2.0/dist/css/material-design-iconic-font.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&ampdisplay=swap'>
+<link rel="stylesheet" href="style.css">
+  <style>
+
+
+div.a {
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: justify;
+  padding-left: 77px;
+  padding-right: 77px;
+  background-color: beige;
+  margin-top: 80px;
+
+}
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 80%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  margin-left: 50px;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.card-review img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+  </style>
+  <link rel="stylesheet" href="jalmahal.css">
+</head>
+<body>
+   
+<header>
+
+   <div id="menu-bar" class="fas fa-bars"></div>
+
+   <a href="#" class="logo"><span>Explore</span>India</a>
+
+   <nav class="navbar">
+       <a href="index.html">Home</a>
+       <a href="#about">About</a>
+       <!-- <a href="#packages">packages</a> -->
+       <a href="#services">Feedback</a>
+       <!-- <a href="#gallery">gallery</a> -->
+       <a href="feedback.html">Ecursion specialist</a>
+       <a href="#below">contact</a>
+   </nav>
+
+   <div class="icons">
+       <i class="fas fa-search" id="search-btn"></i>
+       <i class="fas fa-user" id="login-btn"></i>
+   </div>
+
+   <form action="" class="search-bar-container">
+       <input type="search" id="search-bar" placeholder="search here...">
+       <label for="search-bar" class="fas fa-search"></label>
+   </form>
+
+</header>
+
+
+<section class="home" id="home">
+
+   <div class="video-container">
+       <video src="videos/amer.mp4" id="video-slider" loop autoplay muted></video>
+   </div>
+
+</section>
+
+
+
+
+<div class="a">Amer Fort or Amber Fort is a fort located in Amer, Rajasthan, India. Amer Fort is known for its greatly influenced the architectural style of several buildings of the fort.artistic style elements. With its large ramparts and series of gates and cobbled paths, the fort overlooks Maota Lake, which is the main source of water for the Amer Palace. </div>
+<br>
+
+<!-- this is our table -->
+<br>
+<table>
+    <center>
+    <h2 class="heading">Some of most visited places in Jaipur</h2>
+    <tr>
+    <td>
+    
+    <center>
+    <img class="table-img" src="./table/af1.jpg">
+    </td>
+    <td>
+    <center>
+    <img class="table-img" src="./table/af2.jpg">
+    </td>
+    <td>
+    <center>
+    <img  class="table-img"src="./table/af3.jpg">
+    </td>
+    </tr>
+   </table>
+
+<!-- faq -->
+     
+
+ <div class="arange">
+    <h2 id="faq-heading">FAQ</h2>
+</div>
+<button class="accordion">Are people allowed to go inside Amer ?</button>
+<div class="panel">
+    <p><pre>    The state government has declared the city's Jal Mahal and the Man Sagar lake as a protected area<br>    and placed it under the Rajasthan Lake Development Authority to restrict “activities” in and around<br>    the water body.</pre></p>
+</div>
+
+<button class="accordion">What is the hsitory of Amer ?</button>
+<div class="panel">
+    <p><pre>Refer to our video in above section.</pre></p>
+</div>
+
+<button class="accordion">How many floor does Amer have ?</button>
+<div class="panel">
+    <p><pre>  there are 5 floors in Jalmahal.</pre></p>
+</div>
+
+<button class="accordion">What are the timing to visit Amer ?</button>
+<div class="panel">
+  <p><pre>   6 am to 6 pm .</pre></p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+
+
+  <br>
+
+
+
+        
+        <div class="review-container">
+           <centre><h3>REVIEW</h3></centre> 
+        
+        </div>
+    </div>
+
+</style>
+
+
+
+
+<!------------------------------------------------------------------------------------------------------------
+-->
+ <!-- partial:index.partial.html -->
+<body class="bg-light">
+    <div class="container py-4">
+       <div class="ex1 row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+ 
+          <div class="col">
+             <div class="card h-100 card-review">
+                <div class="card-header pb-0 d-flex flex-row justify-content-between align-items-center">
+                   <div class="d-flex align-items-center">
+                      <img class="rounded-circle me-2"
+                      src="https://via.placeholder.com/256/fe669e/fff.png" />
+                      <div class="d-flex flex-column justify-content-center align-items-start fs-5 lh-sm">
+                         <b class="text-primary">Studio KonKon</b>
+                         <small class="text-muted">14th Sept 2021</small>
+                      </div>
+                   </div>
+                   <span class="fs-1 my-0 fw-bolder text-success">10</span>
+                </div>
+                <div class="card-body py-2">
+                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="card-footer pt-0 d-flex flex-row align-items-center text-muted">
+                   <span class="me-1"><i class="zmdi zmdi-comments"></i></span>
+                   <small>5</small>
+                </div>
+                <a href="#" class="stretched-link"></a>
+             </div>
+          </div>
+ 
+          <div class="col">
+             <div class="card h-100 card-review">
+                <div class="card-header pb-0 d-flex flex-row justify-content-between align-items-center">
+                   <div class="d-flex align-items-center">
+                      <img class="rounded-circle me-2"
+                      src="https://via.placeholder.com/256/9f9cfc/fff.png" />
+                      <div class="d-flex flex-column justify-content-center align-items-start fs-5 lh-sm">
+                         <b class="text-primary">Labore Dolore</b>
+                         <small class="text-muted">10th Sept 2021</small>
+                      </div>
+                   </div>
+                   <span class="fs-1 my-0 fw-bolder text-danger">2</span>
+                </div>
+                <div class="card-body py-2">
+                   <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="card-footer pt-0 d-flex flex-row align-items-center text-muted">
+                   <span class="me-1"><i class="zmdi zmdi-comments"></i></span>
+                   <small>0</small>
+                </div>
+                <a href="#" class="stretched-link"></a>
+             </div>
+          </div>
+ 
+          <div class="col">
+             <div class="card h-100 card-review">
+                <div class="card-header pb-0 d-flex flex-row justify-content-between align-items-center">
+                   <div class="d-flex align-items-center">
+                      <img class="rounded-circle me-2"
+                      src="https://via.placeholder.com/256/99ccff/fff.png" />
+                      <div class="d-flex flex-column justify-content-center align-items-start fs-5 lh-sm">
+                         <b class="text-primary">Tempor Elit</b>
+                         <small class="text-muted">13th Sept 2021</small>
+                      </div>
+                   </div>
+                   <span class="fs-1 my-0 fw-bolder text-warning">6</span>
+                </div>
+                <div class="card-body py-2">
+                   <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+                <div class="card-footer pt-0 d-flex flex-row align-items-center text-muted">
+                   <span class="me-1"><i class="zmdi zmdi-comments"></i></span>
+                   <small>1</small>
+                </div>
+                <a href="#" class="stretched-link"></a>
+             </div>
+          </div>
+ 
+       </div>
+    </div>
+    <!-- footer -->
+
+
+    <section id="about" class="footer">
+
+      <div class="box-container">
+  
+          <div class="box">
+              <h3>about us</h3>
+              <p>
+                ‘ RoamBharat ’
+                “Travel is the main thing you purchase that makes you more extravagant”. We, at ‘Organization Name’, swear by this and put stock in satisfying travel dreams that make you perpetually rich constantly.
+                Customer engagement is all the ways you interact with customers, both online and offline and for that we have developed a chat bot and embedded a real time online whatsapp chat system to help our baffled costumers right away by our support team.
+                we have collaborated with different facebook and Instagram pages to help promote the branding of places.
+                  
+                  
+                  </p>
+          </div>
+          <div class="box">
+              
+          </div>
+          
+          <div id="" class="box">
+              <h3 id="below">follow us</h3>
+              <a href="#">facebook</a>
+              <a href="https://www.instagram.com/invites/contact/?i=13lrnh2e5ky3s&utm_content=o2w9r34">Instagram</a>
+              <a href="#">twitter</a>
+              <a href="#"> Email Us on vishnukumar73680@gmail.com</a>
+          </div>
+      </div>
+  </section>
+    <!-- footer end -->
+ </body>
+ <!-- partial -->
+ 
+   <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js'></script>

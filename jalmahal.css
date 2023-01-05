@@ -1,0 +1,52 @@
+h2{
+    text-align: center;
+    justify-content: center;
+}
+.partner .column {
+    float: left;
+    height: 100px;
+    width: 20%;
+    padding: 5px;
+}
+.partner::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.partner{
+    margin-bottom: 180px;
+}
+
+/* marquee */
+.splash{
+    color: #222;
+    font-size: large;
+}
+/* table link */
+#msg{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    /* color: #1a1a1a; */
+}
+#msg a:hover,
+#msg a:active{
+    color:#ffa500;   
+ } 
+
+ .arange{
+     margin-left: 200px;
+     margin-right: 200px;
+  
+}
+
+.card-review {
+  img {
+     width: 2.5rem;
+     height: 2.5rem;
+  }
+}
+
+h3{
+   text-align: center;
+}

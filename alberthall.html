@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Alberthall</title>
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/faq.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    .footer {
+      padding-top: 50px;
+    }
+    .carousel-inner h2{
+        color: darkslategray;
+    } 
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+      <div class="logo"><img src="./logo.jpg">
+        <a href="#">Explore India</a></div>
+        <ul class="links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li>
+            <a href="#" class="desktop-link">Features</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features">Features</label>
+            <ul>
+              <li><a href="#">Drop Menu 1</a></li>
+              <li><a href="#">Drop Menu 2</a></li>
+              
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-link">Services</a>
+            <input type="checkbox" id="show-services">
+            <label for="show-services">Services</label>
+            <ul>
+              <li><a href="#">Drop Menu 1</a></li>
+              <li><a href="#">Drop Menu 2</a></li>
+              <li>
+                <a href="#" class="desktop-link">More Items</a>
+                <input type="checkbox" id="show-items">
+                <label for="show-items">More Items</label>
+                <ul>
+                  <li><a href="#">Sub Menu 1</a></li>
+                  <li><a href="#">Sub Menu 2</a></li>
+                  
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">Feedback</a></li>
+          <li><a href="#">Alert</a></li>
+        </ul>
+      </div>
+      <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+      <form action="#" class="search-box">
+        <input type="text" placeholder="Where You Want to Go ....." required>
+        <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+      </form>
+    </nav>
+  </div>
+  <!-- Carsousal -->
+<div id="demo" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+      <li data-target="#demo" data-slide-to="3"></li>
+      <li data-target="#demo" data-slide-to="4"></li>
+    </ul>
+    
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="center"><h2>Albert Hall</h2></div>
+        
+        <img src="alberthall1.jpg" alt="">
+      </div>
+      <div class="carousel-item">
+        <div class="center"><h2>Albert Hall</h2></div>
+        <img src="alberthall2.jpg" alt="">
+      </div>
+      <div class="carousel-item">
+        <div class="center"><h2>Albert Hall</h2></div>
+        <img src="alberthall3.jpg" alt="">
+      </div>
+      <div class="carousel-item">
+        <div class="center"><h2>Albert Hall</h2></div>
+        <img src="alberthall4.jpg" alt="">
+      </div>
+      <div class="carousel-item">
+        <div class="center"><h2>Albert Hall</h2></div>
+        <img src="alberthall5.webp" alt="">
+      </div>
+    </div>
+    
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis at aperiam perspiciatis earum eaque, porro omnis nulla enim quos ex minus nesciunt ratione iste impedit eius labore praesentium suscipit dolorem?</p>
+  </div>
+  
+  
+  <!--end caraousal -->
+  <section class="details">
+  <div class="partner">
+    <h2 class="center">
+      our partners<br>
+      
+    </h2>
+    
+      <div class="column">
+        <img src="partner1.JPG" alt="" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="partner2.jpeg" alt="" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="partner3.jpg" alt="" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="partner4.jpg" alt="" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="partner5.jpg" alt="" style="width:100%">
+      </div>
+    
+  </div>  
+ 
+</section>
+  <footer class="footer">
+    <div class="l-footer">
+      <h1><img src="./logo.jpg" alt=""></h1>
+      <p id="footer-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam atque recusandae in sit sunt molestiae aliquid fugit. Mollitia eaque tempore iure sit nobis? Vitae nemo, optio maiores numquam quis recusandae.</p>
+    </div>
+    <ul class="r-footer">
+    <li>
+      <h2>Social</h2>
+    <ul class="box">
+    <li><a href="#">Facebook</a></li>
+    </ul>
+    </li>
+    </ul>
+    </footer>
+    
+    
+    
+      <script src="index.js"></script>
+      
+
+  </body>
+</html>
